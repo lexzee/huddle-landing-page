@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './sass/App.scss'
+import logo from './images/logo.svg'
+import hero from './images/illustration-mockups.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} alt="Huddle logo" />
+          <h1>Huddle</h1>
+        </header>
+        <main className="content">
+          <div className="imgage">
+            <img src={hero} alt="Huddle hero" />
+          </div>
+          <div className="main">
+            <h2>Build The Community Your Fans Will Love</h2>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+            </p>
+            <button>Register</button>
+          </div>
+        </main>
+        <footer className='footer'>
+          <img src="./src/images/bg-mobile.svg" alt="" style={{width: '30px', border: '1px solid red'}}/>
+          <img src="./src/images/bg-mobile.svg" alt="" style={{width: '30px', border: '1px solid red'}}/>
+          <img src="./src/images/bg-mobile.svg" alt="" style={{width: '30px', border: '1px solid red'}}/>
+        </footer>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Your Name Here</a>.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </footer>
     </>
   )
 }
