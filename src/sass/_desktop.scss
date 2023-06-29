@@ -1,0 +1,60 @@
+@media(min-width: "780px"){
+  .App{
+    min-width: 780px;
+    // max-width: 100ow;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 2rem 3rem 1rem 2rem;
+    background: $bg-desktop $primary-violet;
+    background-size: contain;
+    background-position-x: -100%;
+
+    .App-header{
+      margin-bottom: 3.5rem;
+      img{
+        width: 20%
+      }
+    }
+
+    .content{
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 2rem;
+      margin-bottom: -6rem;
+
+      .main{
+        text-align: left;
+        margin: 0;
+        margin-bottom: -10%;
+        padding: 1rem .5rem .2rem 0 ;
+
+        p{
+          font-size: .6rem;
+          padding: 0 .5rem 0 0;
+          margin-bottom: 1rem;
+          line-height: normal;
+        }
+
+        button{
+          margin: 0;
+          font-family: $poppins;
+          width: 35%;
+          height: 2rem;
+        }
+      }
+    }
+
+    .footer{
+      margin-right: 0;
+      // transform: scale(.7);
+      .footimg{
+        width: 11.2px;
+        height: 11.2px;
+        margin: 0;
+        margin-left: .4rem;
+      }
+    }
+  }
+}

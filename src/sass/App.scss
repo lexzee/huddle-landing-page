@@ -7,10 +7,12 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  background: $bg-mobile $primary-violet ;
+  background: $bg-mobile $primary-violet;
   background-position: -5% 0;
   background-size: contain;
   padding: 2.2rem;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem .5rem 0 fade-in($color: $primary-magenta, $amount: .2);
 
   .App-header{
     position: relative;
@@ -56,6 +58,11 @@
         color: $primary-violet;
         box-shadow: 0 .1rem .2rem 0 lighten(black, 10%);
         margin: 1rem;
+        cursor: pointer;
+      }
+      button:active{
+        background-color: $primary-magenta;
+        color: white;
       }
     }
 
@@ -76,6 +83,13 @@
       width: 15px;
       height: 15px;
       padding: 6px;
+      cursor: pointer;
+    }
+    .footimg:active{
+      color: $primary-magenta;
+      border-color: $primary-magenta
     }
   }
 }
+
+@import 'desktop';
