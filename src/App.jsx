@@ -1,6 +1,8 @@
 import './sass/App.scss'
 import logo from './images/logo.svg'
 import hero from './images/illustration-mockups.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   return (
@@ -8,10 +10,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} alt="Huddle logo" />
-          <h1>Huddle</h1>
         </header>
         <main className="content">
-          <div className="imgage">
+          <div className="image">
             <img src={hero} alt="Huddle hero" />
           </div>
           <div className="main">
@@ -23,9 +24,9 @@ function App() {
           </div>
         </main>
         <footer className='footer'>
-          <img src="./src/images/bg-mobile.svg" alt="" style={{width: '30px', border: '1px solid red'}}/>
-          <img src="./src/images/bg-mobile.svg" alt="" style={{width: '30px', border: '1px solid red'}}/>
-          <img src="./src/images/bg-mobile.svg" alt="" style={{width: '30px', border: '1px solid red'}}/>
+          <FontAwesomeIcon className="footimg" icon={faFacebookF} />
+          <FontAwesomeIcon className='footimg' icon={faTwitter} />
+          <FontAwesomeIcon className='footimg' icon={faInstagram} />
         </footer>
       </div>
       <footer>

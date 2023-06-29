@@ -1,7 +1,13 @@
+@import 'config';
+
 :root {
   font-family: 'Poppins', 'Open Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  // max-width: 350px;
+  background: black;
+  color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

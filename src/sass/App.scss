@@ -1,12 +1,81 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import 'config';
+@import 'utilities';
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App{
+  max-width: 350px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: $bg-mobile $primary-violet ;
+  background-position: -5% 0;
+  background-size: contain;
+  padding: 2.2rem;
+
+  .App-header{
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    place-items: left;
+    margin-bottom: 3.4rem;
+
+    img{
+      display: block;
+      max-width: 40%;
+    }
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+
+    .image{
+      img{
+        max-width: 100%;
+      }
+      margin-bottom: 3rem;
+    }
+
+    .main{
+      h2{
+        margin-bottom: 1rem;
+        font: $opensans;
+      }
+      p{
+        line-height: 1.5;
+        padding: .5rem;
+        font-family: $poppins;
+        font-weight: 400;
+      }
+      button{
+        width: 65%;
+        height: 2.3rem;
+        border: none;
+        border-radius: 2rem;
+        font-size: .7rem;
+        color: $primary-violet;
+        box-shadow: 0 .1rem .2rem 0 lighten(black, 10%);
+        margin: 1rem;
+      }
+    }
+
+  }
+  .footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: space-between;
+
+    .footimg{
+      display: block;
+      margin: .4rem;
+      border: 1px solid white;
+      border-radius: 100%;
+      width: 15px;
+      height: 15px;
+      padding: 6px;
+    }
+  }
 }
