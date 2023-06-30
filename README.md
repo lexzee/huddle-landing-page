@@ -10,12 +10,7 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Check](https://www.frontendmentor.io/solutions/huddle-landing-page-with-react-and-sass-491DT5IceP)
 - Live Site URL: [Visit](https://huddle-landing-page-lexzee.vercel.app)
 
 ## My process
