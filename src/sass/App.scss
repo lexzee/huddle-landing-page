@@ -2,7 +2,7 @@
 @import 'utilities';
 
 .App{
-  max-width: 350px;
+  max-width: none;
   color: white;
   display: flex;
   flex-direction: column;
@@ -10,20 +10,17 @@
   background: $bg-mobile $primary-violet;
   background-position: -5% 0;
   background-size: contain;
-  padding: 2.2rem;
+  padding: 2.3rem;
   border-radius: .5rem;
-  box-shadow: .1rem .1rem .5rem 0 fade-in($color: $primary-magenta, $amount: .2);
 
   .App-header{
     position: relative;
-    // display: flex;
-    // flex-direction: column;
     place-items: left;
     margin-bottom: 3.4rem;
 
     img{
       display: block;
-      max-width: 40%;
+      max-width: 41%;
     }
   }
 
@@ -40,24 +37,26 @@
 
     .main{
       h2{
+        font-size: 1.4rem;
         margin-bottom: 1rem;
-        font: $opensans;
+        font: $poppins;
       }
       p{
         line-height: 1.5;
-        padding: .5rem;
-        font-family: $poppins;
-        font-weight: 400;
+        font-size: .9rem;
+        font-family: $opensans;
+        text-align: center;
       }
       button{
-        width: 65%;
+        width: 60%;
         height: 2.3rem;
         border: none;
         border-radius: 2rem;
         font-size: .7rem;
         color: $primary-violet;
-        box-shadow: 0 .1rem .2rem 0 lighten(black, 10%);
-        margin: 1rem;
+        // box-shadow: 0 .1rem .5rem 0 lighten(black, 20%);
+        box-shadow: 0 .1rem .5rem 0 hsla(0, 0%, 0%, .5);
+        margin: 1.5rem;
         cursor: pointer;
       }
       button:active{
